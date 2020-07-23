@@ -1,3 +1,23 @@
-# PolyKey - Nativescript
+# PolyKey Nativescript
 
-A mobile app for on-the-go PolyKey control
+> Portable control of your PolyKey nodes
+
+## Usage
+
+``` bash
+# Install dependencies
+npm install
+
+# Preview on device
+tns preview
+
+# Build, watch for changes and run the application
+tns run
+
+# Build, watch for changes and debug the application
+tns debug <platform>
+
+# Build for production
+tns build <platform> --env.production
+
+```

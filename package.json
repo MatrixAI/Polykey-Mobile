@@ -1,0 +1,42 @@
+{
+  "name": "polykey-nativescript",
+  "version": "0.0.0",
+  "description": "Portable control of your PolyKey nodes",
+  "author": "roger.qiu@matrix.ai",
+  "license": "APL",
+  "nativescript": {
+    "id": "com.matrixai.polykey",
+    "templateVersion": "v2",
+    "tns-android": {
+      "version": "6.5.0"
+    },
+    "tns-ios": {
+      "version": "6.5.0"
+    }
+  },
+  "dependencies": {
+    "vuex": "^3.3.0",
+    "@vue/devtools": "^5.3.3",
+    "nativescript-socketio": "^3.3.1",
+    "nativescript-vue-devtools": "^1.4.0",
+    "nativescript-toasty": "^3.0.0-alpha.2",
+    "nativescript-ui-sidedrawer": "^8.0.1",
+    "@nativescript/theme": "^2.2.1",
+    "nativescript-vue": "^2.6.1",
+    "tns-core-modules": "^6.5.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "babel-loader": "^8.1.0",
+    "nativescript-dev-webpack": "^1.5.1",
+    "nativescript-vue-template-compiler": "^2.6.0",
+    "nativescript-worker-loader": "~0.11.0",
+    "node-sass": "^4.13.1",
+    "tns-platform-declarations": "^6.5.1",
+    "typescript": "^3.8.3",
+    "@types/node": "^13.11.1",
+    "vue": "^2.6.11",
+    "vue-loader": "^15.9.1"
+  }
+}
