@@ -16,19 +16,14 @@
       </FlexboxLayout>
     </ActionBar>
 
-    <FlexboxLayout class="page m-5" flexDirection="column">
-      <Label class="text-xl font-bold" text="Create Password" />
-      <FlexboxLayout class="page mb-5" flexDirection="row">
-        <Label class="text-sm" text="Create Password for " />
-        <Label class="font-bold text-sm" text="Root Key Pair" />
+    <FlexboxLayout class="m-5" flexDirection="column">
+      <Label class="text-xl font-bold mb-5" text="Select A Key Node" />
+      <FlexboxLayout flexDirection="row">
+        <Label class="font-bold text-sm" text="KEYNODE " />
         <Image width="20" src="~/assets/info.png" verticalAlignment="center" />
       </FlexboxLayout>
-      <Label class="font-bold text-base" text="Password" />
-      <TextField
-        class="ml-0 mb-5 rounded-sm border-2 p-3"
-        hint="Enter password"
-      />
-      <Label class="font-bold text-base" text="Confirm Password" />
+      <TextField class="ml-0 mb-5 rounded-sm border-2 p-3" hint="~/polykey" />
+      <Label class="font-bold text-sm" text="PASSWORD" />
       <TextField
         class="ml-0 mb-5 rounded-sm border-2 p-3"
         hint="Confirm password"
@@ -38,8 +33,8 @@
           @tap="route()"
           horizontalAlignment="left"
           class="ml-0 font-bold text-white bg-black"
-          width="70"
-          text="SEAL"
+          width="90"
+          text="UNSEAL"
         />
       </StackLayout>
     </FlexboxLayout>
@@ -57,23 +52,10 @@ export default {
   },
   methods: {
     route() {
-      this.$goto("selectKeyNode");
+      this.$goto("recoveryCode");
     },
   },
 };
 </script>
 
-<style scoped lang="scss">
-@import "~@nativescript/theme/scss/variables/blue";
-
-// Custom styles
-.fas {
-  @include colorize($color: accent);
-}
-
-.info {
-  font-size: 20;
-  horizontal-align: center;
-  vertical-align: center;
-}
-</style>
+<style scoped lang="scss"></style>

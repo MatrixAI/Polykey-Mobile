@@ -1,7 +1,12 @@
 import Vue from "nativescript-vue";
-import 'nativescript-tailwind/dist/tailwind.css'
+import "nativescript-tailwind/dist/tailwind.css";
 import Home from "./components/Home";
+import router from "./router";
+
+Vue.prototype.$goto = function (to, options) {
+    this.$navigateTo(router(to), options)
+}
 
 new Vue({
-    render: h => h('frame', [h(Home)]),
+  render: (h) => h("frame", [h(Home)]),
 }).$start();
