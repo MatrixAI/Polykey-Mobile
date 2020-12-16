@@ -8,7 +8,7 @@
           verticalAlignment="center"
         />
         <Label
-          class="ml-3 text-black text-lg font-bold"
+          class="ml-3 text-black text-lg font-bold font-nunito"
           width="100"
           text="POLYKEY"
           verticalAlignment="center"
@@ -16,33 +16,43 @@
       </FlexboxLayout>
     </ActionBar>
 
-    <FlexboxLayout class="page m-5" flexDirection="column">
-      <Label class="text-xl font-bold" text="Create Password" />
-      <FlexboxLayout class="page mb-5" flexDirection="row">
-        <Label class="text-sm" text="Create Password for " />
-        <Label class="font-bold text-sm" text="Root Key Pair" />
-        <Image width="20" src="~/assets/info.png" verticalAlignment="center" />
-      </FlexboxLayout>
-      <Label class="font-bold text-base" text="Password" />
-      <TextField
-        class="ml-0 mb-5 rounded-sm border-2 p-3"
-        hint="Enter password"
-      />
-      <Label class="font-bold text-base" text="Confirm Password" />
-      <TextField
-        class="ml-0 mb-5 rounded-sm border-2 p-3"
-        hint="Confirm password"
-      />
-      <StackLayout>
-        <Button
-          @tap="route()"
-          horizontalAlignment="left"
-          class="ml-0 font-bold text-white bg-black"
-          width="70"
-          text="SEAL"
+    <ScrollView orientation="vertical">
+      <FlexboxLayout class="page m-5" flexDirection="column">
+        <Label class="text-xl font-bold font-opensans" text="Create Password" />
+        <FlexboxLayout class="-mt-1 mb-5" flexDirection="row">
+          <Label class="text-sm font-nunito" text="Create Password for " />
+          <Label class="font-bold text-sm font-nunito" text="Root Key Pair" />
+          <Image
+            width="20"
+            src="~/assets/info.png"
+            verticalAlignment="center"
+          />
+        </FlexboxLayout>
+        <Label class="font-bold text-base font-opensans" text="Password" />
+        <TextField
+          class="ml-0 mb-5 rounded-p2 border-2 p-3"
+          hint="Enter password"
         />
-      </StackLayout>
-    </FlexboxLayout>
+        <Label
+          class="font-bold text-base font-opensans"
+          text="Confirm Password"
+        />
+        <TextField
+          class="ml-0 mb-5 rounded-p2 border-2 p-3"
+          hint="Confirm password"
+        />
+        <StackLayout>
+          <Button
+            @tap="route()"
+            horizontalAlignment="left"
+            class="ml-0 font-opensans font-bold text-base text-white bg-mygreen rounded-p2"
+            width="60"
+            height="40"
+            text="SEAL"
+          />
+        </StackLayout>
+      </FlexboxLayout>
+    </ScrollView>
   </Page>
 </template>
 
@@ -63,17 +73,4 @@ export default {
 };
 </script>
 
-<style scoped lang="scss">
-@import "~@nativescript/theme/scss/variables/blue";
-
-// Custom styles
-.fas {
-  @include colorize($color: accent);
-}
-
-.info {
-  font-size: 20;
-  horizontal-align: center;
-  vertical-align: center;
-}
-</style>
+<style scoped lang="scss"></style>

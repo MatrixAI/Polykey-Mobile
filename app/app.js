@@ -1,5 +1,4 @@
 import Vue from "nativescript-vue";
-import "nativescript-tailwind/dist/tailwind.css";
 import Home from "./components/Home";
 import router from "./router";
 
