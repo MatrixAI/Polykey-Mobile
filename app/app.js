@@ -1,6 +1,6 @@
 import Vue from "nativescript-vue";
 import Vuex from "vuex";
-import Home from "./components/Home";
+import AtomicDesign from "@/components/pages/AtomicDesign";
 import router from "./router";
 
 // Init routing
@@ -12,5 +12,5 @@ Vue.prototype.$goto = function(to, options) {
 Vue.use(Vuex);
 
 new Vue({
-  render: (h) => h("frame", [h(Home)]),
+  render: (h) => h("frame", [h(AtomicDesign)]),
 }).$start();
